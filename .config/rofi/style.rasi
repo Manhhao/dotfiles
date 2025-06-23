@@ -1,0 +1,81 @@
+* {
+    color0:rgb(11, 14, 27, 0.5);
+    color1: #38425B;
+    color2: #394869;
+    color3: #544D64;
+    color4: #475070;
+    color5: #3B5C86;
+    color6: #536A95;
+    color7:#c2c2c6;
+    color8: #5a5e6f;
+    color9: #38425B;
+    color10: #394869;
+    color11: #544D64;
+    color12: #475070;
+    color13: #3B5C86;
+    color14:rgb(83, 106, 149);
+    color15: #c2c2c6;
+
+    foreground:  @color14;
+    backlight:   @color14;
+    background-color:  transparent;
+    
+    highlight:     underline bold #c2c2c6;
+
+    transparent: rgba(46,52,64,0);
+}
+
+mainbox {
+    spacing: 0;
+    children: [ inputbar, message, listview ];
+}
+
+message {
+    color: @color0;
+    padding: 5;
+    border-color: @foreground;
+    border:  0px 2px 2px 2px;
+    background-color: @color7;
+}
+
+inputbar {
+    color: @color14;
+    padding: 11px;
+    background-color: @color0;
+
+    border: 1px 1px 0px 1px;
+    border-radius:  10px 10px 0px 0px;
+    border-color: @color14;
+}
+
+entry, prompt, case-indicator {
+    text-color: @color14;
+}
+
+listview {
+    padding: 6px;
+    border-radius: 0px 0px 10px 10px;
+    border-color: @color14;
+    border: 0px 1px 1px 1px;
+    background-color: @color0;
+    dynamic: false;
+} 
+
+element {
+    padding: 3px;
+    vertical-align: 0.5;
+    border-radius: 4px;
+    background-color: transparent;
+    color: @foreground;
+}
+
+element selected.normal {
+	background-color: @color14;
+    text-color: @color7;
+}
+
+element-text, element-icon {
+    background-color: inherit;
+    text-color:       inherit;
+    size: 1.5em;
+}

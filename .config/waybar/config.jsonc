@@ -1,0 +1,85 @@
+{
+	"output": "HDMI-A-1",
+	"layer": "top",
+	"modules-left": ["custom/launcher","cpu","memory","disk","hyprland/workspaces"],
+	"modules-center": ["hyprland/window"],
+	"modules-right": ["tray","hyprland/language","pulseaudio", "clock", "custom/power"],
+	
+	"pulseaudio": {
+		"tooltip": false,
+		"scroll-step": 5,
+		"format": "{icon}  {volume}%",
+		"format-muted": "muted",
+		"on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle",
+		"format-icons": {
+			"default": ["", "", ""]
+		}
+	},
+
+    "tray": {
+        "icon-size": 18,
+        "spacing": 10
+    },
+    "disk": {
+        "interval": 30,
+        "format": "  {percentage_used}%",
+        "path": "/"
+    },
+    "hyprland/language": {
+        "format": "  {1}",
+        "tooltip": false
+    },
+    "cpu": {
+        "interval": 15,
+        "format": "  {}%",
+        "max-length": 10
+    },
+    "memory": {
+        "interval": 30,
+        "format": "  {}%",
+        "max-length": 10
+    },
+    "custom/launcher":{
+        "format": " ",
+        "on-click": "rofi -show drun",
+        "on-click-right": "killall rofi",
+        "tooltip": false
+    },
+    "custom/power":{
+        "format": "⏻ ",
+        "tooltip": false,
+        "on-click": "bash ~/.config/rofi/powermenu.sh",
+        "on-click-right": "killall rofi"
+    },
+    "clock": {
+        "format": "  {:%d.%m.%Y - %R}",
+        "tooltip": false
+    },
+    "hyprland/window": {
+        "rewrite": {
+            "(.*) - Brave": "Brave",
+            "(.*) - Visual Studio Code": "Visual Studio Code"
+        }
+    },
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "tooltip": false,
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": []
+        },
+            "format-icons": {
+                "1": "",
+                "2": "",
+                "3": "",
+                "4": "",
+                "5": "",
+                "urgent": "",
+                "active": "",
+                "default": ""
+        }
+    }
+}

@@ -1,0 +1,82 @@
+* {
+    color0:rgb(11, 14, 27, 0.5);
+    color1: #38425B;
+    color2: #394869;
+    color3: #544D64;
+    color4: #475070;
+    color5: #3B5C86;
+    color6: #536A95;
+    color7:#c2c2c6;
+    color8: #5a5e6f;
+    color9: #38425B;
+    color10: #394869;
+    color11: #544D64;
+    color12: #475070;
+    color13: #3B5C86;
+    color14:rgb(83, 106, 149);
+    color15: #c2c2c6;
+
+    foreground:  @color14;
+    backlight:   @color14;
+    background-color:  transparent;
+
+    transparent: rgba(46,52,64,0);
+}
+
+window {
+    fullscreen: false;
+
+    enabled: true;
+    width: 400px;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: @color14;
+    background-color: @color0;
+}
+
+mainbox {
+    enabled: true;
+    padding: 20px;
+    children: [ "inputbar", "listview" ];
+}
+
+inputbar {
+    enabled: false;
+}
+
+listview {
+    enabled: true;
+    columns: 4;
+    lines: 1;
+    layout: vertical;
+    spacing: 10px;
+    background-color: transparent;
+}
+
+element {
+    border-radius: 10px;
+    color: @color14;
+}
+
+element-text {
+    font: "JetbrainsMono Nerd Font 48";
+    background-color: transparent;
+    vertical-align: 0.5;
+    horizontal-align: 0.32;
+}
+
+element selected.normal {
+	background-color: @color14;
+    color: @color15;
+}
+
+element-icon {
+    enabled: false;
+}
+
+element-text {
+ background-color: inherit;
+ text-color: inherit;
+}

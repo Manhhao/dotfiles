@@ -1,0 +1,269 @@
+@import url("/home/manhhao/.cache/wal/colors-waybar.css");
+* {
+	border: none;
+	border-radius: 10;
+    font-family: "JetbrainsMono Nerd Font" ;
+	font-size: 15px;
+	min-height: 10px;
+}
+window#waybar {
+    background-color: rgba(0, 0, 0, 0);
+}
+#language{
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+
+    transition: none;
+    transition: 0.3s;
+
+    border-radius: 10px;
+    border-top-color: alpha(@color14,1);
+    border-style: solid;
+    border-width: 1px;
+
+    background: alpha(@color0,0.5); 
+    color: alpha(@color14,1);
+}
+#language:hover{
+    background-color: alpha(@color9, 1); 
+    color: alpha(@color14,0.9);
+}
+#pulseaudio {
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    transition: 0.3s;
+
+    border-radius: 10px;
+    border-color: alpha(@color14,1);
+    border-style: solid;
+    border-width: 1px;
+
+    background: alpha(@color0,0.5); 
+    color: alpha(@color14,1);
+}
+#pulseaudio:hover{ 
+    background-color: alpha(@color9, 1); 
+    color: alpha(@color14,0.9);
+}
+#pulseaudio.muted {
+    background: alpha(@color0,0.5); 
+    color: alpha(@color14,1);
+    transition: 0.3s;
+}
+#pulseaudio.muted:hover {
+    background-color: alpha(@color9, 1); 
+    color: alpha(@color14,0.9);
+
+}
+#clock {
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: 0.3s;
+
+    border-radius: 10px;
+    border-top-color: alpha(@color14,1);
+    border-style: solid;
+    border-width: 1px;
+
+    background: alpha(@color0,0.5); 
+    color: alpha(@color14,1);
+}
+#clock:hover {
+    background-color: alpha(@color9, 1); 
+    color: alpha(@color14,0.9);
+}
+#disk{
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    transition: 0.3s;
+
+    border-radius: 10px;
+    border-top-color: alpha(@color14,1);
+    border-style: solid;
+    border-width: 1px;
+
+    background: alpha(@color0,0.5); 
+    color: alpha(@color14,1);
+}
+#disk:hover{
+    background-color: alpha(@color9, 1); 
+    color: alpha(@color14,0.9);
+}
+#memory {
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    margin-bottom: 0px;
+    padding-right: 10px;
+    transition: 0.3s;
+
+    border-radius: 10px;
+    border-top-color: alpha(@color14,1);
+    border-style: solid;
+    border-width: 1px;
+
+    background: alpha(@color0,0.5); 
+    color: alpha(@color14,1);
+}
+#memory:hover { 
+    background-color: alpha(@color9, 1); 
+    color: alpha(@color14,0.9);
+
+}
+#cpu {
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    margin-bottom: 0px;
+    padding-right: 10px;
+
+    border-radius: 10px;
+    border-top-color: alpha(@color14,1);
+    border-style: solid;
+    border-width: 1px;
+
+    transition: 0.3s;
+    background: alpha(@color0,0.5); 
+    color: alpha(@color14,1);
+}
+#cpu:hover {
+    background-color: alpha(@color9, 1); 
+    color: alpha(@color14,0.9);
+
+}
+#custom-launcher {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 17px;
+    padding-left: 10px;
+    padding-right: 5px;
+
+    border-radius: 10px;
+    border-top-color: alpha(@color14,1);
+    border-style: solid;
+    border-width: 1px;
+
+    transition: 0.3s;
+    background: alpha(@color0,0.5); 
+    color: alpha(@color14,1);
+}
+#custom-launcher:hover { 
+    background-color: alpha(@color9, 1); 
+    color: alpha(@color14,0.9);
+}
+#custom-power {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 8px;
+    margin-right: 17px;
+    padding-left: 10px;
+    padding-right: 5px;
+    margin-bottom: 0px;
+
+    border-radius: 10px;
+    border-top-color: alpha(@color14,1);
+    border-style: solid;
+    border-width: 1px;
+
+    transition: 0.3s;
+    background: alpha(@color0,0.5); 
+    color: alpha(@color14,1);
+}
+#custom-power:hover {
+    background-color: alpha(@color9, 1); 
+    color: alpha(@color14,0.9);
+
+}
+#workspaces {
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-right: 4px;
+    transition: 0.3s;
+
+    border-radius: 10px;
+    border-top-color: alpha(@color14,1);
+    border-style: solid;
+    border-width: 1px;
+
+    background: alpha(@color0,0.5); 
+    color: alpha(@color14,1);
+}
+#workspaces button {
+    color: @color14;
+    transition: 0.3s;
+}
+#workspaces button:hover {
+    background: transparent;
+    color: transparent;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+#tray{
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    transition: 0.3s;
+
+    border-radius: 10px;
+    border-top-color: alpha(@color14,1);
+    border-style: solid;
+    border-width: 1px;
+
+    background: alpha(@color0,0.5); 
+    color: alpha(@color14,1);
+}
+#tray menu{
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+
+    border-radius: 10px;
+    border-top-color: alpha(@color14,1);
+    border-style: solid;
+    border-width: 1px;
+
+    transition: 0.3s;
+    background: alpha(@color0,0.8); 
+    color: alpha(@color14,1);
+}
+
+
+#window {
+    margin-top: 10px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    transition: 0.3s;
+
+    border-radius: 10px;
+    border-top-color: alpha(@color14,1);
+    border-style: solid;
+    border-width: 1px;
+
+    background: alpha(@color0,0.5); 
+    color: alpha(@color14,1);
+}
+#window:hover {
+    background-color: alpha(@color9, 1); 
+    color: alpha(@color14,0.9);
+}
