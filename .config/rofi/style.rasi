@@ -64,6 +64,7 @@ listview {
 element {
     padding: 3px;
     vertical-align: 0.5;
+    children: [element-icon, element-text];
     border-radius: 4px;
     background-color: transparent;
     color: @foreground;

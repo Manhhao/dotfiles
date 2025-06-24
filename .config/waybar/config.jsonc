@@ -57,8 +57,9 @@
     },
     "hyprland/window": {
         "rewrite": {
-            "(.*) - Brave": "Brave",
-            "(.*) - Visual Studio Code": "Visual Studio Code"
+            "(.*)Mozilla Firefox": "Firefox",
+            "(.*) - Visual Studio Code": "Visual Studio Code",
+	    "(.*) - Discord": "Discord"
         }
     },
     "hyprland/workspaces": {
@@ -68,8 +69,7 @@
             "1": [],
             "2": [],
             "3": [],
-            "4": [],
-            "5": []
+            "4": []
         },
             "format-icons": {
                 "1": "",
