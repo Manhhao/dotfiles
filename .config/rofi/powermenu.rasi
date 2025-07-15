@@ -1,23 +1,5 @@
+@import "~/.cache/wal/colors-rofi-dark.rasi"
 * {
-    color0:rgb(11, 14, 27, 0.5);
-    color1: #38425B;
-    color2: #394869;
-    color3: #544D64;
-    color4: #475070;
-    color5: #3B5C86;
-    color6: #536A95;
-    color7:#c2c2c6;
-    color8: #5a5e6f;
-    color9: #38425B;
-    color10: #394869;
-    color11: #544D64;
-    color12: #475070;
-    color13: #3B5C86;
-    color14:rgb(83, 106, 149);
-    color15: #c2c2c6;
-
-    foreground:  @color14;
-    backlight:   @color14;
     background-color:  transparent;
 
     transparent: rgba(46,52,64,0);
