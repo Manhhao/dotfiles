@@ -4,10 +4,10 @@
 dir="$HOME/.config/rofi"
 theme='powermenu'
 
-logout=""
-suspend=""
-shutdown="⏻"
-reboot=""
+logout=" logout"
+suspend=" sleep"
+shutdown=" shutdown"
+reboot=" restart"
 
 # Rofi CMD
 rofi_cmd() {

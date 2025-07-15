@@ -30,8 +30,8 @@ inputbar {
 
 listview {
     enabled: true;
-    columns: 4;
-    lines: 1;
+    columns: 1;
+    lines: 4;
     layout: vertical;
     spacing: 10px;
     background-color: transparent;
@@ -43,14 +43,14 @@ element {
 }
 
 element-text {
-    font: "JetbrainsMono Nerd Font 48";
+    font: "JetbrainsMono Nerd Font 24";
     background-color: transparent;
     vertical-align: 0.5;
-    horizontal-align: 0.32;
+    horizontal-align: 0.5;
 }
 
 element selected.normal {
-	background-color: @color14;
+    background-color: @color14;
     color: @color15;
 }
 

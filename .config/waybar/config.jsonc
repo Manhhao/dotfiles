@@ -48,7 +48,7 @@
         "tooltip": false
     },
     "custom/power":{
-        "format": "⏻ ",
+        "format": " ",
         "tooltip": false,
         "on-click": "bash ~/.config/rofi/powermenu.sh",
         "on-click-right": "killall rofi"
@@ -74,10 +74,7 @@
         "format": "{icon}",
         "tooltip": false,
         "persistent-workspaces": {
-            "1": [],
-            "2": [],
-            "3": [],
-            "4": []
+            "*": 5
         },
             "format-icons": {
                 "1": "",
@@ -85,13 +82,16 @@
                 "3": "",
                 "4": "",
                 "5": "",
+                "6": "",
+                "7": "",
+                "8": "",
                 "urgent": "",
                 "active": "",
                 "default": ""
         }
     },
-	"network": {
-		"interface": "enp12s0",
+    "network": {
+	"interface": "enp12s0",
         "on-click": "nmcli networking connectivity | grep -q none && nmcli networking on || nmcli networking off",
         "format": "󰌺 {ifname}",
         "format-ethernet": "󰌹 {ifname}",
