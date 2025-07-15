@@ -1,22 +1,21 @@
 {
-	"output": "HDMI-A-1",
-	"layer": "top",
-	"modules-left": ["custom/launcher", "cpu", "memory", "disk", "hyprland/workspaces"],
-	"modules-center": ["hyprland/window"],
-	"modules-right": ["tray", "hyprland/language", "pulseaudio", "clock", "custom/power"],
-	
-	"pulseaudio": {
-		"tooltip": false,
-		"scroll-step": 5,
-		"format": "{icon}  {volume}%",
-		"format-muted": "muted",
-		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-		"on-click-right": "pavucontrol",
-		"format-icons": {
-			"default": ["", "", ""]
-		}
-	},
-
+    "output": "HDMI-A-1",
+    "layer": "top",
+    "modules-left": ["custom/launcher", "cpu", "memory", "disk", "hyprland/workspaces"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["tray", "hyprland/language", "pulseaudio", "clock", "custom/power"],
+        
+    "pulseaudio": {
+        "tooltip": false,
+        "scroll-step": 5,
+        "format": "{icon}  {volume}%",
+        "format-muted": "muted",
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "on-click-right": "pavucontrol",
+        "format-icons": {
+            "default": ["", "", ""]
+        }
+    },
     "tray": {
         "icon-size": 18,
         "spacing": 10
@@ -55,14 +54,20 @@
         "on-click-right": "killall rofi"
     },
     "clock": {
-        "format": "  {:%d.%m.%Y - %R}",
-        "tooltip": false
+        "format": "  {:%R}",
+        "tooltip-format": "{calendar}",
+        "calendar": {
+            "format": {
+                "today": "<b><u>{}</u></b>"
+            }
+        }
     },
     "hyprland/window": {
         "rewrite": {
             "(.*)Mozilla Firefox": "Firefox",
             "(.*) - Visual Studio Code": "Visual Studio Code",
-	    "(.*) - Discord": "Discord"
+	    "(.*) - Discord": "Discord",
+	    "(.*) - Brave": "Brave"
         }
     },
     "hyprland/workspaces": {
@@ -84,5 +89,16 @@
                 "active": "",
                 "default": ""
         }
+    },
+	"network": {
+		"interface": "enp12s0",
+        "on-click": "nmcli networking connectivity | grep -q none && nmcli networking on || nmcli networking off",
+        "format": "󰌺 {ifname}",
+        "format-ethernet": "󰌹 {ifname}",
+        "format-disconnected": "󰌺 {ifname}",
+        "tooltip-format": "disconnected",
+        "tooltip-format-ethernet": "connected",
+        "tooltip-format-disconnected": "disconnected"
     }
 }
+
