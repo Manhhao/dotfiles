@@ -39,7 +39,7 @@ listview {
 
 element {
     border-radius: 10px;
-    color: @color14;
+    color: @foreground;
 }
 
 element-text {

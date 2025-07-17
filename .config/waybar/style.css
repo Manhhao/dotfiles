@@ -20,16 +20,16 @@ window#waybar {
     transition: 0.3s;
 
     border-radius: 10px;
-    border-top-color: alpha(@color14,1);
+    border-color: alpha(@color14,1);
     border-style: solid;
     border-width: 1px;
 
     background: alpha(@color0,0.5); 
-    color: alpha(@color14,1);
+    color: alpha(@cursor,1);
 }
 #language:hover{
     background-color: alpha(@color9, 1); 
-    color: alpha(@color14,0.9);
+    color: alpha(@cursor,1);
 }
 #pulseaudio {
     margin-top: 10px;
@@ -45,20 +45,20 @@ window#waybar {
     border-width: 1px;
 
     background: alpha(@color0,0.5); 
-    color: alpha(@color14,1);
+    color: alpha(@cursor,1);
 }
 #pulseaudio:hover{ 
     background-color: alpha(@color9, 1); 
-    color: alpha(@color14,0.9);
+    color: alpha(@cursor,1);
 }
 #pulseaudio.muted {
     background: alpha(@color0,0.5); 
-    color: alpha(@color14,1);
+    color: alpha(@cursor,1);
     transition: 0.3s;
 }
 #pulseaudio.muted:hover {
     background-color: alpha(@color9, 1); 
-    color: alpha(@color14,0.9);
+    color: alpha(@cursor,1);
 
 }
 #clock {
@@ -71,16 +71,16 @@ window#waybar {
     transition: 0.3s;
 
     border-radius: 10px;
-    border-top-color: alpha(@color14,1);
+    border-color: alpha(@color14,1);
     border-style: solid;
     border-width: 1px;
 
     background: alpha(@color0,0.5); 
-    color: alpha(@color14,1);
+    color: alpha(@cursor,1);
 }
 #clock:hover {
     background-color: alpha(@color9, 1); 
-    color: alpha(@color14,0.9);
+    color: alpha(@cursor,1);
 }
 #disk{
     margin-top: 10px;
@@ -91,16 +91,16 @@ window#waybar {
     transition: 0.3s;
 
     border-radius: 10px;
-    border-top-color: alpha(@color14,1);
+    border-color: alpha(@color14,1);
     border-style: solid;
     border-width: 1px;
 
     background: alpha(@color0,0.5); 
-    color: alpha(@color14,1);
+    color: alpha(@cursor,1);
 }
 #disk:hover{
     background-color: alpha(@color9, 1); 
-    color: alpha(@color14,0.9);
+    color: alpha(@cursor,1);
 }
 #memory {
     margin-top: 10px;
@@ -111,16 +111,16 @@ window#waybar {
     transition: 0.3s;
 
     border-radius: 10px;
-    border-top-color: alpha(@color14,1);
+    border-color: alpha(@color14,1);
     border-style: solid;
     border-width: 1px;
 
     background: alpha(@color0,0.5); 
-    color: alpha(@color14,1);
+    color: alpha(@cursor,1);
 }
 #memory:hover { 
     background-color: alpha(@color9, 1); 
-    color: alpha(@color14,0.9);
+    color: alpha(@cursor,1);
 
 }
 #cpu {
@@ -131,17 +131,17 @@ window#waybar {
     padding-right: 10px;
 
     border-radius: 10px;
-    border-top-color: alpha(@color14,1);
+    border-color: alpha(@color14,1);
     border-style: solid;
     border-width: 1px;
 
     transition: 0.3s;
     background: alpha(@color0,0.5); 
-    color: alpha(@color14,1);
+    color: alpha(@cursor,1);
 }
 #cpu:hover {
     background-color: alpha(@color9, 1); 
-    color: alpha(@color14,0.9);
+    color: alpha(@cursor,1);
 
 }
 #custom-launcher {
@@ -152,17 +152,17 @@ window#waybar {
     padding-right: 5px;
 
     border-radius: 10px;
-    border-top-color: alpha(@color14,1);
+    border-color: alpha(@color14,1);
     border-style: solid;
     border-width: 1px;
 
     transition: 0.3s;
     background: alpha(@color0,0.5); 
-    color: alpha(@color14,1);
+    color: alpha(@cursor,1);
 }
 #custom-launcher:hover { 
     background-color: alpha(@color9, 1); 
-    color: alpha(@color14,0.9);
+    color: alpha(@cursor,1);
 }
 #custom-power {
     font-size: 15px;
@@ -174,17 +174,17 @@ window#waybar {
     margin-bottom: 0px;
 
     border-radius: 10px;
-    border-top-color: alpha(@color14,1);
+    border-color: alpha(@color14,1);
     border-style: solid;
     border-width: 1px;
 
     transition: 0.3s;
     background: alpha(@color0,0.5); 
-    color: alpha(@color14,1);
+    color: alpha(@cursor,1);
 }
 #custom-power:hover {
     background-color: alpha(@color9, 1); 
-    color: alpha(@color14,0.9);
+    color: alpha(@cursor,1);
 
 }
 #workspaces {
@@ -194,15 +194,15 @@ window#waybar {
     transition: 0.3s;
 
     border-radius: 10px;
-    border-top-color: alpha(@color14,1);
+    border-color: alpha(@color14,1);
     border-style: solid;
     border-width: 1px;
 
     background: alpha(@color0,0.5); 
-    color: alpha(@color14,1);
+    color: alpha(@cursor,1);
 }
 #workspaces button {
-    color: @color14;
+    color: @cursor;
     transition: 0.3s;
 }
 #workspaces button:hover {
@@ -221,12 +221,12 @@ window#waybar {
     transition: 0.3s;
 
     border-radius: 10px;
-    border-top-color: alpha(@color14,1);
+    border-color: alpha(@color14,1);
     border-style: solid;
     border-width: 1px;
 
     background: alpha(@color0,0.5); 
-    color: alpha(@color14,1);
+    color: alpha(@cursor,1);
 }
 #tray menu{
     margin-top: 10px;
@@ -236,13 +236,13 @@ window#waybar {
     margin-bottom: 0px;
 
     border-radius: 10px;
-    border-top-color: alpha(@color14,1);
+    border-color: alpha(@color14,1);
     border-style: solid;
     border-width: 1px;
 
     transition: 0.3s;
     background: alpha(@color0,0.8); 
-    color: alpha(@color14,1);
+    color: alpha(@cursor,1);
 }
 
 #network{
@@ -256,16 +256,16 @@ window#waybar {
     transition: 0.3s;
 
     border-radius: 10px;
-    border-top-color: alpha(@color14,1);
+    border-color: alpha(@color14,1);
     border-style: solid;
     border-width: 1px;
 
     background: alpha(@color0,0.5); 
-    color: alpha(@color14,1);
+    color: alpha(@cursor,1);
 }
 #network:hover{
     background-color: alpha(@color9, 1); 
-    color: alpha(@color14,0.9);
+    color: alpha(@cursor,1);
 }
 
 #window {
@@ -278,14 +278,14 @@ window#waybar {
     transition: 0.3s;
 
     border-radius: 10px;
-    border-top-color: alpha(@color14,1);
+    border-color: alpha(@color14,1);
     border-style: solid;
     border-width: 1px;
 
     background: alpha(@color0,0.5); 
-    color: alpha(@color14,1);
+    color: alpha(@cursor,1);
 }
 #window:hover {
     background-color: alpha(@color9, 1); 
-    color: alpha(@color14,0.9);
+    color: alpha(@cursor,1);
 }
